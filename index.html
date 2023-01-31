@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdvanceJS-403-03/Tip calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Charles' Tip Calculator</h1>
+        <hr>
+        <h4>How much was your bill?</h4>
+        <div id="input-amount">
+            $<input type="text" id="bill_amount">
+        </div>
+        <h4>How was your service?</h4>
+        <select id="select_val">
+            <option>--Choose an option--</option>
+            <option value="30">30% - Outstanding</option>
+            <option value="20">20% - Good</option>
+            <option value="15">15% - It was Okay</option>
+            <option value="10">10% - Bad</option>
+            <option value="5">5% - Terrible</option>
+        </select>
+
+        <h4>How many people sharing the bill?</h4>
+        <input type="text" name="" id="number_of_people"> people
+
+        <div id="btn"><button id="bttn" onclick="tipCalculate()">CALCULATE!</button></div>
+        <h4>TIP AMOUNT</h4>
+        <h1 id="display_tip">$0.00</h1>
+        <h4>each</h4>
+    </div>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
